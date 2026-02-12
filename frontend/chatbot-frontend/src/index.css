@@ -1,0 +1,156 @@
+/* ---------- Global Styles ---------- */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+}
+
+/* Centered containers for pages */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+}
+
+/* Headings */
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: #00ffe7;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(90deg, #00ffe7, #007cf0);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 255, 231, 0.4);
+}
+
+/* Inputs */
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+/* Links */
+a {
+  color: #00ffe7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Chat List ---------- */
+.chat-list button {
+  margin-bottom: 15px;
+}
+
+.chat-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.chat-list li {
+  background: rgba(255,255,255,0.1);
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.chat-list li:hover {
+  background: rgba(0, 255, 231, 0.2);
+}
+
+/* ---------- Chat Window ---------- */
+.chat-window {
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 10px;
+  height: 400px;
+  overflow-y: auto;
+  border-radius: 15px;
+  background: rgba(0,0,0,0.2);
+  margin-bottom: 10px;
+}
+
+.message {
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-radius: 12px;
+  max-width: 70%;
+  word-wrap: break-word;
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+
+/* Different colors for USER and AI */
+.message.user {
+  background: #007cf0;
+  color: #fff;
+  margin-left: auto;
+  text-align: right;
+}
+
+.message.ai {
+  background: #00ffe7;
+  color: #000;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* Input and Send button row */
+.chat-input-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.chat-input-container input {
+  flex: 1;
+}
+
+.chat-input-container button {
+  flex: 0 0 80px;
+}
+
+/* ---------- Futuristic Glow Effects ---------- */
+button, .chat-list li {
+  box-shadow: 0 0 10px rgba(0,255,231,0.3), 0 0 20px rgba(0,124,240,0.2);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 0 5px rgba(0,255,231,0.3), 0 0 10px rgba(0,124,240,0.2);
+}
