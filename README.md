@@ -11,4 +11,4 @@ Chats Page
 
 <img width="1919" height="931" alt="image" src="https://github.com/user-attachments/assets/5c21f1cf-da21-48c0-bce1-002965c4b38f" />
 
-![Uploading image.png…]()
+<img width="1894" height="905" alt="image" src="https://github.com/user-attachments/assets/2b36cc0c-4d1c-4f73-9842-c4d1fb40f99b" />
